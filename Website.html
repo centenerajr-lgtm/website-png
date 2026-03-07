@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>seatpost</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f6fa;
+    margin:0;
+}
+
+/* HEADER */
+
+.header{
+    background:#2c3e50;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+}
+
+/* SEAT GRID */
+
+.seat-grid{
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap:10px;
+    padding:20px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.seat{
+    padding:12px;
+    border:none;
+    background:#3498db;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.seat:hover{
+    background:#2980b9;
+    transform:scale(1.05);
+}
+
+/* STUDENT INFO SECTION */
+
+.student-section{
+    margin-top:25px;
+    display:flex;
+    gap:25px;
+}
+
+.student-picture{
+    width:160px;
+    height:160px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#ecf0f1;
+    font-weight:bold;
+}
+
+.student-info{
+    flex:1;
+}
+
+.student-info input{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.student-info textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h2>Category #1 – Seat Post</h2>
+</div>
+
+<div class="container">
+
+<!-- SEAT BUTTON GRID -->
+
+<div class="seat-grid">
+
+<button class="seat">1</button>
+<button class="seat">2</button>
+<button class="seat">3</button>
+<button class="seat">4</button>
+<button class="seat">5</button>
+<button class="seat">6</button>
+<button class="seat">7</button>
+<button class="seat">8</button>
+<button class="seat">9</button>
+<button class="seat">10</button>
+
+<button class="seat">11</button>
+<button class="seat">12</button>
+<button class="seat">13</button>
+<button class="seat">14</button>
+<button class="seat">15</button>
+<button class="seat">16</button>
+<button class="seat">17</button>
+<button class="seat">18</button>
+<button class="seat">19</button>
+<button class="seat">20</button>
+
+<button class="seat">21</button>
+<button class="seat">22</button>
+<button class="seat">23</button>
+<button class="seat">24</button>
+<button class="seat">25</button>
+<button class="seat">26</button>
+<button class="seat">27</button>
+<button class="seat">28</button>
+<button class="seat">29</button>
+<button class="seat">30</button>
+
+</div>
+
+<!-- STUDENT LIST / INFO -->
+
+<div class="student-section">
+
+<div class="student-picture">
+2x2 Picture
+</div>
+
+<div class="student-info">
+
+<input type="text" placeholder="Student Name">
+
+<input type="text" placeholder="Student ID">
+
+<input type="text" placeholder="Course / Section">
+
+<textarea rows="4" placeholder="Additional Information"></textarea>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
